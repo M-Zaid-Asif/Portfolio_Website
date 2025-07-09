@@ -1,0 +1,109 @@
+/* Counter Project Buttons CSS */
+.btn_counter{
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.btn_counter:hover{
+    transition: ease-in-out 0.3s ;
+
+}
+
+/* Tip Calculator Input */
+.tip_inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.calculate_input{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 80%;
+    padding:7px;
+    margin-top: 2px;
+}
+
+.calculate_input:focus{
+    border: 1px solid black;
+}
+
+.calculate_input label{
+    font-size: 18px;
+}
+
+/* Toss Coin Buttons Styling */
+.btn_coin{  
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    cursor:pointer;
+}
+
+@media (max-width:1400px) {
+    .guess_number{
+        width: 50%;
+    }
+}
+
+/* Rock Paper Scissor Styling */
+.btn {
+    background-color: rgb(14, 165, 233);
+    width: 130px;
+    border: 1px solid rgb(14, 165, 233);
+    color: white;
+    font-weight: bold;
+    padding: 3px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.result_div, .stat {
+    margin: 10px 0;
+    border: 1px solid gray;
+    width: 130px;
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(152, 152, 213);
+}
+
+.btn:hover{
+    background-color: rgb(2, 132, 199);
+}
+
+.result_div h2, .stats h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result_div p, .stats p {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width:455px) {
+    .buttons {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 10px 0;
+    }
+
+    .result {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 auto;
+        place-items: center;
+    }
+}

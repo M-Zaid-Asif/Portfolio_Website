@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: oklch(0.13 0.028 261.692);
+    color: white;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media (min-width:1900px) {
+    body {
+        width: 1120px;
+        margin: auto;
+    }
+}

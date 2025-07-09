@@ -1,0 +1,120 @@
+/* Header Links Styling */
+.as {
+    border-radius: 8px;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+
+.as:hover {
+    border: 1px solid gray;
+    background-color: rgb(235, 233, 233);
+    color: black;
+}
+
+/* Dropdown Menu Links Styling */
+.drop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    height: 7rem;
+}
+
+li a:hover {
+    font-size: 30px;
+}
+
+/* Hero Buttons Styling */
+.hero_btn {
+    width: 200px;
+    padding: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* About Page */
+.hero {
+    background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+}
+
+/* Project Divs Styling */
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.project_div {
+    border: 2px solid gray;
+    width: 225px;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: oklch(0.13 0.028 261.692);
+    border-radius: 16px;
+    margin: 5px 0;
+}
+
+.project_div:hover {
+    box-shadow: 5px 0px 5px rgb(234, 177, 177);
+    cursor: pointer;
+}
+
+/* Contact Form */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+@media (min-width:1200px) {
+    .contact_form {
+        width: 50%;
+    }
+}
+
+.input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px 5px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    background-color: white !important;
+    color: black;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn_contact {
+    width: 80%;
+    padding: 10px 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn_contact:hover{
+    background-color: gray;
+    color: white;
+    transition: ease-in-out 500;
+}
+
+/* GitHub and LinkedIn Buttons */
+.social{
+    width: 80%;
+}
