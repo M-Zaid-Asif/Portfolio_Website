@@ -25,7 +25,7 @@ const Header = () => {
         <p className="text-2xl font-semibold pointer">Zaid.dev</p>
         <nav className="hidden sm:block ">
           <div className="flex">
-            <Link className="as mx-5 pointer-cursor" to="/">
+            <Link className="as mx-5 pointer-cursor" to="/#home">
               Home
             </Link>
             <Link className="as mx-5 pointer-cursor" to="/#about">

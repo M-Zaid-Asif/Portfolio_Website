@@ -8,6 +8,10 @@ const TipCalculator = () => {
   const [tip, setTip] = useState("");
 
   function calculateTip() {
+    if(totalbill === "" || tipPercent === ""){
+      alert("Please submit all the fields")
+    }
+
     const tip = totalbill * (tipPercent / 100);
 
     setFinalTipPercent(tipPercent);

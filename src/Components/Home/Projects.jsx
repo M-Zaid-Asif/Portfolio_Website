@@ -18,23 +18,21 @@ const Projects = () => {
   ];
 
   return (
-    <div
-      className="py-20 flex flex-col items-center w-[95%] m-auto"
-      id="projects"
-    >
-      <h2 className="text-center text-3xl sm:text-6xl">Projects</h2>
-      <div className="div mt-5 w-[98%]">
-        {projects.map((project) => (
-          <Link
-            to={project.path}
-            key={project.name}
-            className="project_div"
-          >
-            {project.name}
-          </Link>
-        ))}
+    <>
+      <div
+        className="py-20 flex flex-col items-center w-[95%] m-auto"
+        id="projects"
+      >
+        <h2 className="text-center text-3xl sm:text-6xl">Projects</h2>
+        <div className="div mt-5 w-[98%]">
+          {projects.map((project) => (
+            <Link to={project.path} key={project.name} className="project_div">
+              {project.name}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
