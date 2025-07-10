@@ -11,6 +11,17 @@ const RockPaperScissor = () => {
   const [tied, setTied] = useState(0);
   const [percent, setPercentage] = useState(0);
 
+function reset() {
+  setChosen("");
+  setRealValue("");
+  setResult("");
+  setPlayed(0);
+  setWon(0);
+  setLoss(0);
+  setTied(0);
+  setPercentage(0);
+}
+
   function randomChoice() {
     const randomChoices = Math.floor(Math.random() * choices.length);
     const obtainedValue = choices[randomChoices];
@@ -92,7 +103,9 @@ const RockPaperScissor = () => {
     <>
       <h2 className="mx-6 text-xl lg:text-center my-3 font-semibold">Rules</h2>
       <div className="m-auto w-[95%] lg:w-1/2">
-        <p className="pb-2 mx-6">Rules for Rock-Scissor Paper game, are simple:</p>
+        <p className="pb-2 mx-6">
+          Rules for Rock-Scissor Paper game, are simple:
+        </p>
         <ul className="flex flex-col gap-2 mx-6">
           <li>Rock beats Scissor</li>
           <li>Scissor beats Paper</li>
@@ -154,6 +167,12 @@ const RockPaperScissor = () => {
           <p>{percent}</p>
         </div>
       </div>
+      <button
+        className="flex [width:90%] cursor-pointer hover:bg-red-600 bg-red-500 font-semibold my-10 rounded-2xl justify-center py-2 sm:w-3/4 m-auto lg:w-1/2"
+        onClick={reset}
+      >
+        Reset Game
+      </button>
     </>
   );
 };
