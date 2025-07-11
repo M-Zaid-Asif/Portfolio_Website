@@ -76,21 +76,27 @@ const RandomQuoteGenerator = () => {
   }
   return (
     <>
-      <h2 className="text-xl my-2 mx-6 xl:text-center font-semibold">Random Quote Generator</h2>
+      <div className="flex flex-col justify-center items-center h-[600px]">
+        <h2 className="text-xl my-2 mx-6 xl:text-center font-semibold">
+          Random Quote Generator
+        </h2>
 
-      <div className="border border-black w-4/5 lg:[width:60%] m-auto my-4 p-4 rounded-lg shadow-md shadow-blue-100">
-        <p><strong>{quote.name}</strong>, said that</p>
-        <p>
-          <strong>"</strong>
-          {quote.quote}
-          <strong>"</strong>
-        </p>
-        <button
-          onClick={generateQuote}
-          className="w-40 border border-sky-500 bg-sky-500 py-0.5 text-white font-bold rounded-md flex justify-center items-center m-auto mt-5 hover:cursor-pointer hover:bg-sky-700"
-        >
-          Generate Quote
-        </button>
+        <div className="border border-black w-4/5 lg:[width:60%] m-auto my-4 p-4 rounded-lg shadow-md shadow-blue-100">
+          <p>
+            <strong>{quote.name}</strong>, said that
+          </p>
+          <p>
+            <strong>"</strong>
+            {quote.quote}
+            <strong>"</strong>
+          </p>
+          <button
+            onClick={generateQuote}
+            className="w-40 border border-sky-500 bg-sky-500 py-0.5 text-white font-bold rounded-md flex justify-center items-center m-auto mt-5 hover:cursor-pointer hover:bg-sky-700"
+          >
+            Generate Quote
+          </button>
+        </div>
       </div>
     </>
   );

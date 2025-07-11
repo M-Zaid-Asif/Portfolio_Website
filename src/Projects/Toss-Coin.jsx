@@ -50,10 +50,11 @@ const TossCoin = () => {
 
   return (
     <>
+     <div className="flex flex-col justify-center items-center h-[600px] ">
       <h2 className="mx-6 text-2xl lg:text-center my-2 font-semibold">
         Toss the Coin
       </h2>
-      <div className="border border-gray-500 shadow-md shadow-blue-200 flex flex-col w-[90%] sm:w-4/5 md:w-3/5 m-auto justify-center items-center py-4 rounded-lg xl:w-1/2">
+      <div className="border border-gray-500 shadow-md shadow-blue-200 flex flex-col w-[90%] sm:w-4/5 md:w-3/5 items-center py-4 rounded-lg xl:w-1/2">
         <div className="buttons_coin w-[95%] justify-around flex py-4">
           <button
             className="btn_coin bg-sky-500 focus:bg-sky-600 w-[49%] border border-sky-500 "
@@ -78,6 +79,7 @@ const TossCoin = () => {
             {outcome}
           </p>
         </div>
+      </div>
       </div>
     </>
   );

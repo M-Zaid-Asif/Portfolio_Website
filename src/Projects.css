@@ -107,3 +107,15 @@
         place-items: center;
     }
 }
+
+@media (max-width:310px) {
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .result{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

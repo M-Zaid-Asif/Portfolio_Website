@@ -23,10 +23,10 @@ const Projects = () => {
         className="py-20 flex flex-col items-center w-[95%] m-auto"
         id="projects"
       >
-        <h2 className="text-center text-3xl sm:text-6xl">Projects</h2>
-        <div className="div mt-5 w-[98%]">
+        <h2 className="text-center text-3xl sm:text-6xl bg-">Projects</h2>
+        <div className="div mt-5 w-[98%] ">
           {projects.map((project) => (
-            <Link to={project.path} key={project.name} className="project_div">
+            <Link to={project.path} key={project.name} className="project_div  bg-gray-200 hover:bg-gray-300 text-gray-800">
               {project.name}
             </Link>
           ))}

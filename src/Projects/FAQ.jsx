@@ -35,24 +35,30 @@ const FAQ = () => {
 
   return (
     <>
-      <h2 className="text-2xl mx-6 my-2 text-center">Frequently Asked Questions</h2>
+      <div className="flex flex-col justify-center items-center h-[600px] ">
+        <h2 className="text-2xl mx-6 my-2 text-center">
+          Frequently Asked Questions
+        </h2>
 
-      <div className=" outline outline-gray-400 [width:80%] justify-center m-auto mt-4 lg:[width:40%]">
-        {/* map gives us new array */}
-        {data.map((item, index) => (
-          <div className="" key={index}>
-            <div
-              className="bg-black question h-auto p-4 cursor-pointer hover:bg-gray-800"
-              onClick={() => toggleAnswer(index)}
-            >
-              {item.question}
+        <div className=" outline outline-gray-400 [width:70%] justify-center mt-4 lg:[width:40%]">
+          {/* map gives us new array */}
+          {data.map((item, index) => (
+            <div className="" key={index}>
+              <div
+                className="bg-black question h-auto p-4 cursor-pointer hover:bg-gray-800"
+                onClick={() => toggleAnswer(index)}
+              >
+                {item.question}
+              </div>
+
+              {visibleIndex === index && (
+                <div className="bg-white text-black h-auto p-4 hover:bg-gray-100 cursor-pointer">
+                  {item.answer}
+                </div>
+              )}
             </div>
-
-            {visibleIndex === index && (
-              <div className="bg-white text-black h-auto p-4 hover:bg-gray-100 cursor-pointer">{item.answer}</div>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
