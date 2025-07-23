@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
+import "../../Projects.css";
 
 const Projects = () => {
   const projects = [
+    { name: "Product-Filter", path: "/product-filter" },
+    { name: "Todo List", path: "/todo" },
+    { name: "Grocery-List", path: "/grocery-list" },
+    { name: "Form Validation", path: "/validation-form"},
+    { name: "Image-Slider", path: "/image-slider" },
     { name: "Rock-Scissor-Paper", path: "/rock-scissor-paper" },
     { name: "Tip-Calculator", path: "/tip-calculator" },
     { name: "BMI-Calculator", path: "/bmi-calculator" },
@@ -26,7 +32,11 @@ const Projects = () => {
         <h2 className="text-center text-3xl sm:text-6xl bg-">Projects</h2>
         <div className="div mt-5 w-[98%] ">
           {projects.map((project) => (
-            <Link to={project.path} key={project.name} className="project_div  bg-gray-200 hover:bg-gray-300 text-gray-800">
+            <Link
+              to={project.path}
+              key={project.name}
+              className="project_div font-semibold bg-gray-200 hover:bg-gray-300 text-gray-800"
+            >
               {project.name}
             </Link>
           ))}

@@ -15,13 +15,18 @@ import TipCalculator from "./Projects/Tip-Calculator";
 import TossCoin from "./Projects/Toss-Coin";
 import WordCounter from "./Projects/Word-Counter";
 import BackgroundColorChanger from "./Projects/Background-Color-Changer";
+import ImageSlider from "./Projects/Image-Slider";
+import ProductFilter from "./Projects/Product-Filter";
+import GroceryList from "./Projects/Grocery-List";
+import Todo from "./Projects/Todo"
+import ValidationForm from "./Projects/Form-Validation"
 import "./App.css";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <ScrollToHash />
+        <ScrollToHash />
         <Routes>
           <Route path="/" element={<Layout />}>
             {/* Other routes here */}
@@ -51,7 +56,12 @@ function App() {
               path="/background-color-changer"
               element={<BackgroundColorChanger />}
             />
-            <Route path="//faq" element={<FAQ />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/image-slider" element={<ImageSlider />} />
+            <Route path="/product-filter" element={<ProductFilter />} />
+            <Route path="/grocery-list" element={<GroceryList />} />
+            <Route path="/todo" element={<Todo />} />
+            <Route path="/validation-form" element={<ValidationForm />} />
           </Route>
         </Routes>
       </BrowserRouter>
