@@ -1,5 +1,5 @@
 /* Counter Project Buttons CSS */
-.btn_counter{
+.btn_counter {
     border-radius: 8px;
     color: white;
     font-size: 20px;
@@ -7,46 +7,46 @@
     margin: 5px 0;
 }
 
-.btn_counter:hover{
-    transition: ease-in-out 0.3s ;
+.btn_counter:hover {
+    transition: ease-in-out 0.3s;
 
 }
 
 /* Tip Calculator Input */
-.tip_inputs{
+.tip_inputs {
     display: flex;
     flex-direction: column;
     margin: 10px;
     margin-left: 30px;
 }
 
-.calculate_input{
+.calculate_input {
     border: 1px solid gray;
     border-radius: 10px;
     width: 80%;
-    padding:7px;
+    padding: 7px;
     margin-top: 2px;
 }
 
-.calculate_input:focus{
+.calculate_input:focus {
     border: 1px solid black;
 }
 
-.calculate_input label{
+.calculate_input label {
     font-size: 18px;
 }
 
 /* Toss Coin Buttons Styling */
-.btn_coin{  
+.btn_coin {
     font-weight: bold;
     border-radius: 10px;
     color: white;
     height: 40px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 @media (max-width:1400px) {
-    .guess_number{
+    .guess_number {
         width: 50%;
     }
 }
@@ -63,7 +63,8 @@
     cursor: pointer;
 }
 
-.result_div, .stat {
+.result_div,
+.stat {
     margin: 10px 0;
     border: 1px solid gray;
     width: 130px;
@@ -72,17 +73,19 @@
     box-shadow: 0 4px 6px rgb(152, 152, 213);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(2, 132, 199);
 }
 
-.result_div h2, .stats h2 {
+.result_div h2,
+.stats h2 {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
 }
 
-.result_div p, .stats p {
+.result_div p,
+.stats p {
     text-align: center;
     padding-top: 10px;
     font-weight: 600;
@@ -109,13 +112,90 @@
 }
 
 @media (max-width:310px) {
-    .stats{
+    .stats {
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
-    .result{
+    .result {
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+}
+
+/* Grocery List CSS */
+tr,
+th,
+thead,
+td {
+    padding: 5px 0;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.btn_list {
+    width: 80%;
+    margin: 4px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Todo list CSS */
+.table_btn {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.todo tr,
+.todo th,
+.todo thead,
+.todo td{
+    padding: 5px 3px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.todo th, tr {
+    padding: 10px;
+    
+}
+
+.todo th:first-child {
+    width: 80%;
+}
+
+/* Image Slider CSS */
+.btn_img{
+    color: white;
+    border: 1px solid gray;
+    width: 100px;
+    padding: 3px 5px;
+    text-align: center;
+    z-index: 99;
+}
+
+.btn_img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/* Form Validation CSS */
+input:invalid + p {
+  display: block;
+  margin-top: 3px;
+  color: red;
+}
+
+input:valid + p {
+  display: none;
 }
