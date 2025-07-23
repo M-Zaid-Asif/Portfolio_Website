@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <h2 className="text-xl m-2 font-bold md:text-center">Grocery List</h2>
+      <h2 className="text-xl my-3 ml-6 font-bold lg:text-center">Grocery List</h2>
       <form
         className="border w-[80%] xl:w-[60%] mx-auto flex gap-2 flex-col px-2 py-4 my-5"
         onSubmit={handleSubmit}

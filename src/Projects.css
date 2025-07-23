@@ -178,6 +178,7 @@ td {
 .btn_img{
     color: white;
     border: 1px solid gray;
+    border-radius: 6px;
     width: 100px;
     padding: 3px 5px;
     text-align: center;

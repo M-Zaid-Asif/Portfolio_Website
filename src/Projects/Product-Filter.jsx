@@ -168,11 +168,11 @@ function App() {
 
   return (
     <>
-      <div className="absolute sm:hidden w-[40px] flex justify-center items-center h-[30px] ">
+      <div className="absolute sm:hidden w-[40px] flex justify-center items-center h-[30px] ml-6 mb-3 mt-5 ">
         {button && (
           <button
             onClick={filterStatus}
-            className="cursor-pointer hover:bg-gray-600 p-[5px] rounded-2xl"
+            className="cursor-pointer hover:bg-gray-600 p-[5px] rounded-2xl border hover:border-none"
           >
             <FaBars />
           </button>
@@ -181,7 +181,7 @@ function App() {
 
       <div className="flex flex-row xl:w-[80%] mx-auto ">
         {visible && (
-          <div className="flex flex-col px-3 py-2 sm:w-[35%]">
+          <div className="ml-6 my-3 flex flex-col px-3 py-2 sm:w-[35%]">
             <div className="flex flex-row justify-between">
               <h2 className="font-semibold text-xl">Sort By: </h2>
               <button

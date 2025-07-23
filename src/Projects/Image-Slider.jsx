@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-[100%] justify-center items-center sm:gap-2 px-2 xl:w-[60%] xl:mx-auto">
+      <div className="flex flex-col w-[100%] sm:flex-row sm:w-[90%] mx-auto justify-center items-center sm:gap-2 px-2 xl:w-[60%] xl:mx-auto">
         <button className="btn_img hidden sm:block" onClick={prevOne}>
           Prev
         </button>
